@@ -56,7 +56,7 @@ class Browser(object):
     @property
     def chat_root(self):
         assert self.host, "browser has no associated host"
-        return 'http://chat.%s' % (self.host,)
+        return 'https://chat.%s' % (self.host,)
 
     # request helpers
 
