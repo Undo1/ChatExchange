@@ -161,8 +161,8 @@ class Browser(object):
         assert self.host is None or self.host is host
 
         self._se_openid_login_with_fkey(
-            'http://%s/users/login?returnurl = %%2f' % (host,),
-            'http://%s/users/authenticate' % (host,),
+            'https://%s/users/login?returnurl = %%2f' % (host,),
+            'https://%s/users/authenticate' % (host,),
             {
                 'oauth_version': '',
                 'oauth_server': '',
